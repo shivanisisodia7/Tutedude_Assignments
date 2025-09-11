@@ -12,7 +12,8 @@ Problem Statement:  Write a Python program that:
 3.   Handles errors gracefully if the file does not exist.
 """
 
-## error handles
+## Here Code is trying to read the content in the excel file after opening and closing it. Once it reads the content, it prints the same
+## But at the same time if file is not there, it will throw an error.
 try:
   file = open('sample.txt','r')
   print("Reading File Content")
@@ -49,6 +50,8 @@ with open('sample.txt','a') as file:
 
 file1 = open('sample.txt','r')
 print(file1.read())
+
+## Here Python code will take the input from the user and append the same in the exising file and print the same
 
 """Problem Statement: Write a Python program that:
 1.   Takes user input and writes it to a file named output.txt.
